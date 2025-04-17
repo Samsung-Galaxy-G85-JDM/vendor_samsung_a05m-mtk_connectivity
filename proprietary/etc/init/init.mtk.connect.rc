@@ -1,0 +1,24 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+#SEC_RIL Mount
+on init
+	mount none /system_ext/lib/modules/bt_drv_connac1x.ko /vendor/lib/modules/bt_drv_connac1x.ko bind
+	mount none /system_ext/lib/modules/connfem.ko /vendor/lib/modules/connfem.ko bind
+	mount none /system_ext/lib/modules/fmradio_drv_mt6631.ko /vendor/lib/modules/fmradio_drv_mt6631.ko bind
+	mount none /system_ext/lib/modules/fpsgo.ko /vendor/lib/modules/fpsgo.ko bind
+	mount none /system_ext/lib/modules/gps_drv.ko /vendor/lib/modules/gps_drv.ko bind
+	mount none /system_ext/lib/modules/met.ko /vendor/lib/modules/met.ko bind
+	mount none /system_ext/lib/modules/modules.alias /vendor/lib/modules/modules.alias bind
+	mount none /system_ext/lib/modules/modules.dep /vendor/lib/modules/modules.dep bind
+	mount none /system_ext/lib/modules/modules.load /vendor/lib/modules/modules.load bind
+	mount none /system_ext/lib/modules/modules.softdep /vendor/lib/modules/modules.softdep bind
+	mount none /system_ext/lib/modules/trace_mmstat.ko /vendor/lib/modules/trace_mmstat.ko bind
+	mount none /system_ext/lib/modules/udc_lib.ko /vendor/lib/modules/udc_lib.ko bind
+	mount none /system_ext/lib/modules/wlan_drv_gen4m.ko /vendor/lib/modules/wlan_drv_gen4m.ko bind
+	mount none /system_ext/lib/modules/wmt_drv.ko /vendor/lib/modules/wmt_drv.ko bind
+	mount none /system_ext/lib/modules/wmt_chrdev_wifi.ko /vendor/lib/modules/wmt_chrdev_wifi.ko bind
+
